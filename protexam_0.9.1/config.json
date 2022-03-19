@@ -1,0 +1,97 @@
+{
+    "paths": {
+        "projects": [],
+        "img": {
+            "instr01": "instr01.png"
+        }
+    },
+    "formats": {
+        "cnames": {
+            "pd": {
+                "ab": ["Abundance 1", "Abundance: 1", "Abundance:"],
+                "ab_norm": ["Abundances Normalized", "Abundances (Normalized):"],
+                "ab_rat": ["Abundance Ratio ", "Abundance Ratio: ("],
+                "ab_gr": ["Abundances Grouped", "Abundances (Grouped):"],
+                "ab_sc": ["Abundances Scaled", "Abundances (Scaled):"],
+                "accession": ["Master Protein Accessions", "Accession"],
+                "avg_sn": ["Average Reporter SN", "Average Reporter S/N"],
+                "coverage": ["Coverage in Percent", "Coverage [%]", "Sequence Coverage in Percent", "Sequence Coverage [%]"],
+                "descr": ["Description"],
+                "excl_strings": ["Adj P-Value", "Adj. P-Value", "CV in Percent", "CVs in Percent", "CV [%]", "CVs [%]"],
+                "faims_cv": ["Comp Voltage in V", "Comp. Voltage [V]"],
+                "fileid": ["File ID"],
+                "injtime": ["Ion Inject Time in ms", "Ion Inject Time [ms]"],
+                "iso": ["Isolation Interference in Percent", "Isolation Interference [%]"],
+                "mass_err": ["Delta M in ppm", "DeltaM [ppm]"],
+                "master_prot": ["Master"],
+                "missed_cleav": ["Number of Missed Cleavages", "# Missed Cleavages"],
+                "mw": ["MW in kDa", "MW [kDa]"],
+                "rtime": ["RT in min", "RT [min]"],
+                "pepts_all": ["Number of Peptides", "# Peptides"],
+                "pepts_un": ["Number of Unique Peptides", "# Unique Peptides"],
+                "prot_id_qval": ["Exp q-value Combined"],
+                "psm_num": ["Number of PSMs", "# PSMs"],
+                "raw_fname": ["Spectrum File"],
+                "mods": ["Modifications"],
+                "prec_mh": [
+                    "Precursor MHplus in Da", "MHplus in Da",
+                    "Precursor MH+ [Da]", "MH+ [Da]"
+                ],
+                "prec_z": ["Precursor Charge"],
+                "prec_mz": [
+                    "Precursor mz in Da", "mz in Da",
+                    "Precursor m/z [Da]", "m/z [Da]"
+                ],
+                "se_score": ["Ions Score", "XCorr"],
+                "sequence": ["Annotated Sequence", "Sequence"],
+                "sps_match": ["SPS Mass Matches in Percent", "SPS Mass Matches [%]"]
+            },
+            "mq": {
+                "ab": ["Reporter intensity corrected ", "Reporter intensity "],
+                "ab_norm": [],
+                "ab_rat": [],
+                "ab_gr": [],
+                "ab_sc": [],
+                "accession": ["Proteins", "Protein IDs"],
+                "avg_sn": [],
+                "coverage": ["Sequence coverage [%]"],
+                "descr": ["Protein names"],
+                "excl_strings": ["intensity count ", "Adj. P-Value", "CV in Percent", "CVs in Percent", "CV [%]", "CVs [%]"],
+                "has_id": ["Identified"],
+                "is_reverse": ["Reverse"],
+                "faims_cv": ["Comp Voltage in V", "Comp. Voltage [V]"],
+                "fileid": ["File ID"],
+                "injtime": ["Ion Inject Time in ms", "Ion Inject Time [ms]"],
+                "iso": ["Isolation Interference in Percent", "Isolation Interference [%]"],
+                "mass_err": ["Delta M in ppm", "DeltaM [ppm]"],
+                "master_prot": ["Master"],
+                "missed_cleav": ["Missed cleavages"],
+                "mw": ["Mol. weight [kDa]"],
+                "rtime": ["Retention time"],
+                "pepts_all": ["Peptides"],
+                "pepts_un": ["Unique peptides"],
+                "prot_id_qval": ["Q-value"],
+                "psm_num": ["MS/MS count"],
+                "raw_fname": ["Raw file"],
+                "mods": ["Modifications"],
+                "prec_mh": ["Mass"],
+                "prec_z": ["Charge"],
+                "prec_mz": ["m/z"],
+                "se_score": ["Score"],
+                "sequence": ["Sequence"],
+                "sps_match": ["SPS Mass Matches in Percent", "SPS Mass Matches [%]"]
+            }
+        },
+        "mod_abbreviations": {
+            "cys": {
+                "carbamidomethyl": "CAM", "carbamido methyl": "CAM",
+                "iodoacetamide": "CAM", "iaa": "CAM",
+                "carboxymethyl": "IAC", "carboxy methyl": "IAC",
+                "ethylmaleimide": "NEM", "ethyl maleimide": "NEM",
+                "methylthio": "MeS", "methyl thio": "MeS",
+                "mmts": "MeS"
+            },
+            "other": {}
+        }
+    }
+} 
