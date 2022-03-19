@@ -1,7 +1,6 @@
 import numpy as np
 import pandas as pd
 import streamlit as st
-#import os
 import matplotlib.pyplot as plt
 import seaborn as sns
 from scipy.cluster.hierarchy import linkage, leaves_list
@@ -9,9 +8,6 @@ from sklearn.decomposition import PCA
 from bokeh.layouts import column, row
 from bokeh.plotting import figure
 from bokeh.models import ColumnDataSource, CustomJS, LabelSet, Select
-#import re
-#import json
-#from pathlib import Path
 
 class MathOps:
     """
