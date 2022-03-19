@@ -15,7 +15,7 @@ Now we can activate the newly created environment:
 source /your_project_path/project_name/bin/activate
 ```
 
-If the environment has been activated correctly, the console should be displaying the name of the environment in the console.
+If the environment has been activated correctly, the name of the environment should be displayed in the console.
 
 ```
 (project_name) user:~$
