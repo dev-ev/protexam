@@ -27,7 +27,7 @@ It is a good idea to update pip within the virtual environment before installing
 pip3 install --upgrade pip
 ```
 
-We can now install *protexam*:
+We can now install *protexam*. The installation will take a while due to the long list of dependencies.
 
 ```
 pip3 install protexam
