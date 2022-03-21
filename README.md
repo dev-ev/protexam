@@ -87,6 +87,6 @@ The files are uploaded and visualized one-by-one. Choose one of the permitted ta
 
 <img src="https://github.com/dev-ev/protexam/blob/main/img/app_screenshot_02.png" width="700">
 
-Displaying all of the plots can take a while, but you can start scrolling down while the images are being rendered:
+Displaying all of the plots can take time, but you can start scrolling down while the images are being rendered:
 
 <img src="https://github.com/dev-ev/protexam/blob/main/img/app_screenshot_03.png" width="700">
