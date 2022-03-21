@@ -4,7 +4,6 @@
 *protexam* has been tested on Python 3.8 on Windows 10 and Ubuntu 20.04.
 The package is dependent on multiple packages, such as *streamlit*, *bokeh*, *matplotlib*. Because of that, we strongly advise creating a virtual environment. One option is [*venv*](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments), which is a part of Python's standard library. First, we need to choose a path and create a virtual environment there. On Linux, create the environment using the command line, with your custom path and project name:
 
-
 ```
 python3 -m venv /your_project_path/project_name
 ```
@@ -15,7 +14,7 @@ Now we can activate the newly created environment:
 source /your_project_path/project_name/bin/activate
 ```
 
-If the environment has been activated correctly, the name of the environment should be displayed in the console.
+If the environment has been activated correctly, it's name should be displayed in the console.
 
 ```
 (project_name) user:~$
@@ -54,6 +53,18 @@ streamlit run app.py --server.maxUploadSize 1000 --server.port 8501
 where:
     server.maxUploadSize - max size of a single text file in MB
     server.port - port for the app
+    
+On Windows, we would need to modify the commands sligthly:
+
+```
+python -m venv /your_project_path/project_name
+your_project_path/project_name/Scripts/activate
+pip install --upgrade pip
+pip install protexam
+python -m protexam
+cd path_to_app_source
+streamlit run app.py --server.maxUploadSize 1000 --server.port 8501
+``` 
 
 On the start of the application, *streamlit* will give us a hint on how to access the dashboard in a web browser. To view locally, go to:
 ```
@@ -66,7 +77,7 @@ http://ip-of-the-server:8501
 ```
 If the app is running correctly, we will see the file upload widget:
 
-![Default view with the upload widget](img/app_screenshot_01.png)
+<img src="https://github.com/dev-ev/protexam/blob/main/img/app_screenshot_01.png" width="400">
 
 The dashboard has been specifically adapted for the [Proteome Discoverer (PD)](https://www.thermofisher.com/se/en/home/industrial/mass-spectrometry/liquid-chromatography-mass-spectrometry-lc-ms/lc-ms-software/multi-omics-data-analysis/proteome-discoverer-software.html) tab-delimited output files. However, a few of the MaxQuant tables are also supported. There are two options for creating tab-delimited text output in PD 2.4:
 * add the Result Exporter node to tconsensus workflow. We usually choose "True" for the "R-Friendly header" option, but the app works with "False" as well. The resulting text files can be found in the study folder.
