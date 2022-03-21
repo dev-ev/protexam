@@ -57,13 +57,13 @@ where:
 On Windows, we would need to modify the commands sligthly:
 
 ```
-python -m venv /your_project_path/project_name
-your_project_path/project_name/Scripts/activate
-pip install --upgrade pip
-pip install protexam
-python -m protexam
-cd path_to_app_source
-streamlit run app.py --server.maxUploadSize 1000 --server.port 8501
+>python -m venv /your_project_path/project_name
+>your_project_path/project_name/Scripts/activate
+>pip install --upgrade pip
+>pip install protexam
+>python -m protexam
+>cd path_to_app_source
+>streamlit run app.py --server.maxUploadSize 1000 --server.port 8501
 ``` 
 
 On the start of the application, *streamlit* will give us a hint on how to access the dashboard in a web browser. To view locally, go to:
@@ -77,7 +77,7 @@ http://ip-of-the-server:8501
 ```
 If the app is running correctly, we will see the file upload widget:
 
-<img src="https://github.com/dev-ev/protexam/blob/main/img/app_screenshot_01.png" width="400">
+<img src="https://github.com/dev-ev/protexam/blob/main/img/app_screenshot_01.png" width="700">
 
 The dashboard has been specifically adapted for the [Proteome Discoverer (PD)](https://www.thermofisher.com/se/en/home/industrial/mass-spectrometry/liquid-chromatography-mass-spectrometry-lc-ms/lc-ms-software/multi-omics-data-analysis/proteome-discoverer-software.html) tab-delimited output files. However, a few of the MaxQuant tables are also supported. There are two options for creating tab-delimited text output in PD 2.4:
 * add the Result Exporter node to tconsensus workflow. We usually choose "True" for the "R-Friendly header" option, but the app works with "False" as well. The resulting text files can be found in the study folder.
@@ -85,4 +85,8 @@ The dashboard has been specifically adapted for the [Proteome Discoverer (PD)](h
 
 The files are uploaded and visualized one-by-one. Choose one of the permitted tables and upload. The app will try to determine the type of the uploaded file and show it below the upload widget. If the type has been inferred correctly, press the "Generate Plots" button. If you know the type of the table, but it has not been determined automatically, you can override it manually by selecting from the list, an then pressing the "Generate Plots" button.
 
-![The uploaded file has been recognized](img/app_screenshot_02.png)
+<img src="https://github.com/dev-ev/protexam/blob/main/img/app_screenshot_02.png" width="700">
+
+Displaying all of the plots can take a while, but you can start scrolling down while the images are being rendered:
+
+<img src="https://github.com/dev-ev/protexam/blob/main/img/app_screenshot_03.png" width="700">
