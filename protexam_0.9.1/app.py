@@ -11,7 +11,7 @@ if __name__ == '__main__':
 
     #Load the config files, which contains the column names among other stuff
     cwd = Path(__file__).parent.resolve()
-#    print(f'Script directory {cwd}')
+    
     try:
         config_path = cwd / 'config.json'#cwd.parents[0] / 'config.json'
         print(f'Config file in {config_path}')
