@@ -1,8 +1,6 @@
 import numpy as np
 import pandas as pd
 import streamlit as st
-#import os
-#import matplotlib.pyplot as plt
 import json
 from helpers import FileFormatOps, PlottingOps
 from pathlib import Path
@@ -24,8 +22,6 @@ if __name__ == '__main__':
     except:
         st.warning('Could not read the config file, stopping the processing.')
         st.stop()
-    
-#    img_path = cwd.parents[0] / 'img' / PARAMS['paths']['img']['instr01']
         
     # Upload the file as in ByteIO object
     st.markdown('''Upload a tab-separated text file from Proteome Discoverer (PD) or MaxQuant (MQ).  \nSupported PD tables are QuanSpectra, MSMSSpectrumInfo, PSMs, PeptideGroups and Proteins.  \nSupported MQ tables are msmsScans, modificationSpecificPeptides and proteinGroups:''')
