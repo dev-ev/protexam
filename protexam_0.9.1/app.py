@@ -8,6 +8,7 @@ from helpers import FileFormatOps, PlottingOps
 from pathlib import Path
 
 if __name__ == '__main__':
+    st.set_page_config(page_title = 'protexam: Quality Check for Proteomics')
     st.title('Quality Check App')
 
     #Load the config files, which contains the column names among other stuff
