@@ -79,7 +79,8 @@ If the app is running correctly, we will see the file upload widget:
 
 <img src="https://github.com/dev-ev/protexam/blob/main/img/app_screenshot_01.png" width="700">
 
-The dashboard has been specifically adapted for the [Proteome Discoverer (PD)](https://www.thermofisher.com/se/en/home/industrial/mass-spectrometry/liquid-chromatography-mass-spectrometry-lc-ms/lc-ms-software/multi-omics-data-analysis/proteome-discoverer-software.html) tab-delimited output files, but a few of the MaxQuant tables are also supported.\There are two options for creating tab-delimited text output in PD 2.4:
+The dashboard has been specifically adapted for the [Proteome Discoverer (PD)](https://www.thermofisher.com/se/en/home/industrial/mass-spectrometry/liquid-chromatography-mass-spectrometry-lc-ms/lc-ms-software/multi-omics-data-analysis/proteome-discoverer-software.html) tab-delimited output files, but a few of the MaxQuant tables are also supported.\
+There are two options for creating tab-delimited text output in PD 2.4:
 * add the Result Exporter node to the consensus workflow. We recommend to choose "True" for the "R-Friendly header" option, but the app works with "False" as well. The resulting text files can be found in the study folder.
 * if the workflow has been already completed, open the PD result file and go to the menu File -> Export -> To Text (tab delimited).
 
