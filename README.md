@@ -1,7 +1,7 @@
 # protexam
 ## Inspect your quantitative proteomics results using this streamlit-powered dashboard. The app is specifically tailored for comprehensive examination of result files from isobaric labeling-based quantitative experiments.
 
-*protexam* has been tested on Python 3.8 on Windows 10 and Ubuntu 20.04. *protexam* is dependent on multiple other packages, such as *streamlit*, *bokeh*, *matplotlib*. Because of that, we strongly advise creating a virtual environment that will contain the package and all of it's dependencies. One option is [*venv*](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments), which is a part of Python's standard library.\
+*protexam* has been tested on Python 3.8 and 3.10 on Windows 10 and Python 3.8 on Ubuntu 20.04. *protexam* is dependent on multiple other packages, such as *streamlit*, *bokeh*, *matplotlib*. Because of that, we strongly advise creating a virtual environment that will contain the package and all of it's dependencies. One option is [*venv*](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments), which is a part of Python's standard library.\
 First, we need to choose a path and create a virtual environment there. On Linux, create the environment using the command line, with your custom path and project name:
 
 ```
