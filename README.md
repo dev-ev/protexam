@@ -79,11 +79,11 @@ If the app is running correctly, we will see the file upload widget:
 
 <img src="https://github.com/dev-ev/protexam/blob/main/img/app_screenshot_01.png" width="700">
 
-The dashboard has been specifically adapted for the [Proteome Discoverer (PD)](https://www.thermofisher.com/se/en/home/industrial/mass-spectrometry/liquid-chromatography-mass-spectrometry-lc-ms/lc-ms-software/multi-omics-data-analysis/proteome-discoverer-software.html) tab-delimited output files. However, a few of the MaxQuant tables are also supported. There are two options for creating tab-delimited text output in PD 2.4:
-* add the Result Exporter node to the consensus workflow. We usually choose "True" for the "R-Friendly header" option, but the app works with "False" as well. The resulting text files can be found in the study folder.
-* if the workflows have been already completed, open the PD result file and go to the menu File -> Export -> To Text (tab delimited).
+The dashboard has been specifically adapted for the [Proteome Discoverer (PD)](https://www.thermofisher.com/se/en/home/industrial/mass-spectrometry/liquid-chromatography-mass-spectrometry-lc-ms/lc-ms-software/multi-omics-data-analysis/proteome-discoverer-software.html) tab-delimited output files, but a few of the MaxQuant tables are also supported.\There are two options for creating tab-delimited text output in PD 2.4:
+* add the Result Exporter node to the consensus workflow. We recommend to choose "True" for the "R-Friendly header" option, but the app works with "False" as well. The resulting text files can be found in the study folder.
+* if the workflow has been already completed, open the PD result file and go to the menu File -> Export -> To Text (tab delimited).
 
-The files are uploaded and visualized one-by-one. Choose one of the supported tables and upload. The app will try to determine the type of the uploaded file and show that below the upload widget. If the type has been inferred correctly, press the "Generate Plots" button. If we know the type of the table, but it has not been determined automatically, we can override it manually by selecting from the list, an then pressing the "Generate Plots" button.
+The files are uploaded and visualized one-by-one. Choose one of the supported tables and upload. The app will try to determine the type of the uploaded file and show that below the upload widget. If the type has been inferred correctly, press the "Generate Plots" button. If we know the type of the table, but it has not been determined automatically, we can override it by selecting from the list, an then pressing the "Generate Plots" button.
 
 <img src="https://github.com/dev-ev/protexam/blob/main/img/app_screenshot_02.png" width="700">
 
